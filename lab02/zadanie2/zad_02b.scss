@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+#outer {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .box {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        color: white;
+        background-color: lightgray;
+    &:first-of-type {
+        background-color: blue;
+        }
+    &:last-of-type {
+        background-color: black;
+        }
+    }
+}

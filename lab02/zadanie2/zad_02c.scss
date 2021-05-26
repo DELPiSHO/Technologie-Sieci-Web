@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+#outer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    .box {
+        width: 100px;
+        height: 100px;
+        display:flex;
+        justify-content: center;
+        padding-top: 10px;
+        color: white;
+        background-color: lightgray;
+        &:first-of-type {
+            align-self:flex-start;
+            background-color: blue;
+        }
+        &:last-of-type {
+            align-self: flex-end;
+            background-color: black;
+        }
+    }
+}
